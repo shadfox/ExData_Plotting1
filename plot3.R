@@ -16,7 +16,7 @@ sub1 <- as.numeric(dataset$Sub_metering_1)
 sub2 <- as.numeric(dataset$Sub_metering_2)
 sub3 <- as.numeric(dataset$Sub_metering_3)
 png("plot3.png", width = 480, height = 480)
-plot(dates, numbers, type="l", xlab = "", ylab = "Energy sub metering")
+plot(dates, sub1, type="l", xlab = "", ylab = "Energy sub metering")
 lines(dates, sub2, type = "l", col="red")
 lines(dates, sub3, type = "l", col="blue")
 legend("topright", 
